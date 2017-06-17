@@ -1,0 +1,51 @@
+﻿
+AULA 2 -> Criação do Projeto - ASP.NET MVC 5
+
+1. Quiron.LojaVirtual.Dominio - Class Libary - O primeiro é uma Class Library chamada Domain.
+. Dominio - Entidade
+. Repositorio
+. Dto
+2. O segundo projeto é do tipo ASP.NET MVC Empty.
+3. Um projeto do tipo Unit Test.
+
+AULA 3 -> Controle do Código Fonte - GitHub.
+
+1. O GitHub que é um serviço de hosting compartilhado para projetos de versionamento.
+
+Link -> https://github.com/JaisonSousa/Quiron.LojaVirtual.V2.git
+Link do Repositorio -> https://github.com/JaisonSousa/Quiron.LojaVirtual.V2.git
+
+AULA 4 -> Controle do Código Fonte – Visual Studio Online.
+
+1. O controle do código fonte utilizando o Visual Studio Online http://www.visualstudio.com/. 
+
+AULA 5 -> Entidade Produto e Local DB.
+
+1. Criação da entidade Produtos, esta é principal classe do projeto, vitrine e carrinho são baseados nesta entidade.
+
+2. (localdb)\v11.0 -> que é uma versão simplificada (nem por isso desprovida dos recursos principais) do Sql Server Express, voltada para os desenvolvedores 
+afim de evitar a instalação desnecessária de uma edição completa do SQL Server e mostra como criar a tabela de produtos no Local Db e popula a tabela com produtos.
+
+AULA 6 -> Criando repositório e Context.
+
+1. referenciar o Entity Framework com o Package Manager Console. O Entity Framework é um objeto de mapeamento relacional que facilita o acesso a dados,
+
+2. É criado o repositório e o context que é a classe responsável por interagir com os dados e as entidades, no exemplo entre a entidade produtos e a tabela produtos
+
+3. Confirmar se tudo foi configurado corretamente ele apresenta a criação de um Controller e uma View onde são exibidos os produtos.
+
+AULA 7 -> Criar o Controller e a View Vitrine - Curso de ASP.NET MVC 5 - Criando uma Loja Virtual.
+
+1. O autor início o curso mostrando dois testes com os operadores Take e Skip em um projeto Test do Visual Studio 2015.
+
+2. cria o Controller Vitrine, e neste um método chamado ListaProdutos onde realiza a paginação da coleção de produtos, utilizando o Take e Skip.
+
+. O operador Take é usado para selecionar os primeiros n objetos de uma coleção
+. O operador Skip ignora o(s) primeiros(s) n objetos de uma coleção.
+
+3. Cria a View Vitrine e mostra como é realizada a paginação através do navegador.
+
+
+
+
+ 
