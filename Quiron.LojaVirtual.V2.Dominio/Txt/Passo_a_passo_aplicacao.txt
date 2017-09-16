@@ -45,6 +45,16 @@ AULA 7 -> Criar o Controller e a View Vitrine - Curso de ASP.NET MVC 5 - Criando
 
 3. Cria a View Vitrine e mostra como é realizada a paginação através do navegador.
 
+Aula 8 -> Paginação - Curso de ASP.NET MVC - Criando uma Loja Virtual 
+
+1. Criação de duas classes que serão utilizadas no projeto para realizar a paginação dos produtos na vitrine da loja virtual. 
+
+2. A primeira classe criada é Paginacao.cs, que possui propriedades necessárias para definir a paginação, como a página atual, total de itens na página e número total de produtos.
+
+3. Criar a segunda classe chamada PaginacaoHelpers, que tem como objetivo gerar o html da paginação, a classe retorna um MvcHtmlString criando as tags, 
+   a classe utiliza a Paginacao.cs e TagBuilder que é útil para ir criando as tags, alguns métodos da TagBuilder são. InnerHtml, AddCssClass.
+
+
 
 
 
