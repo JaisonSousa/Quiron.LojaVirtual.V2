@@ -36,6 +36,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -52,6 +57,16 @@
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Quiron.LojaVirtual.V2.Dominio\Quiron.LojaVirtual.V2.Dominio.csproj">
+      <Project>{812a502f-45ef-4188-8858-1ee75371a3da}</Project>
+      <Name>Quiron.LojaVirtual.V2.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quiron.LojaVirtual.V2.Web\Quiron.LojaVirtual.V2.Web.csproj">
+      <Project>{1b81ebe0-8485-4e9e-bba9-b5e54aaeb8b4}</Project>
+      <Name>Quiron.LojaVirtual.V2.Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

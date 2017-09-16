@@ -54,7 +54,13 @@ Aula 8 -> Paginação - Curso de ASP.NET MVC - Criando uma Loja Virtual
 3. Criar a segunda classe chamada PaginacaoHelpers, que tem como objetivo gerar o html da paginação, a classe retorna um MvcHtmlString criando as tags, 
    a classe utiliza a Paginacao.cs e TagBuilder que é útil para ir criando as tags, alguns métodos da TagBuilder são. InnerHtml, AddCssClass.
 
+Aula 9 -> Teste da Paginação - Curso de ASP.NET MVC - Criando uma Loja Virtual
 
+1. Criação das classes que geram a paginação, nesta aula o autor através do projeto Test cria um [TestMethod] para o método PageLinks.
+
+2. Comenta sobre o AAA, que são o Arrange, Act e Assert, no Arrange ele prepara as variáveis utilizadas no teste, em Act ele estimula 
+o teste utilizando as variáveis do Arrenge, em Assert verifica o resultado do teste, sendo o resultado a geração do html de paginação, 
+que antes de ser exibido em uma View e no navegador é testado e confirmado que está tudo correto com o método e mostra que testar é uma boa prática de desenvolvimento.
 
 
 

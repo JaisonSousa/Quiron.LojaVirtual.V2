@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace Quiron.LojaVirtual.V2.Web.HtmlHelpers
 {
+    using Models;
     public static class HtmlHelpers
     {
         //Representa uma cadeia de caracteres codificada em HTML que não deve ser codificada novamente.

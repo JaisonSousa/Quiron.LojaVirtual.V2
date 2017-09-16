@@ -1,9 +1,13 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
+using Quiron.LojaVirtual.V2.Web.HtmlHelpers;
+using Quiron.LojaVirtual.V2.Web.Models;
+using System.Web.Mvc;
 
 namespace Quiron.LojaVirtual.V2.UnitTest
 {
+    
     [TestClass]
     public class UnitTest1
     {
@@ -30,6 +34,41 @@ namespace Quiron.LojaVirtual.V2.UnitTest
             int[] teste = { 1, 3, 9 };
 
             CollectionAssert.AreEqual(resultado.ToArray(), teste);
+
+        }
+
+        [TestMethod]
+        public void TestarSeAPaginacaoEstaSendoGeradaCorretamente()
+        {
+            //Arrange
+           
+            HtmlHelper htmlHelper = null;
+
+            Paginacao paginacao = new Paginacao
+            {
+                PaginaAtual = 2,
+                ItensPorPargina = 10,
+                ItensTotal = 28
+
+            };
+
+            Func<int, string> paginaUrl = i => "Pagina" + i;
+
+
+            //Act
+            MvcHtmlString resultado = htmlHelper.PageLinks(paginacao, paginaUrl);
+
+            //Assert
+
+            Assert.AreEqual(
+
+                 @"<a class=""btn btn-default"" href=""Pagina1"">1</a>"
+                 + @"<a class=""btn btn-default btn-primary selected"" href=""Pagina2"">2</a>"
+                 + @"<a class=""btn btn-default"" href=""Pagina3"">3</a>", resultado.ToString()
+
+
+                );
+
 
         }
     }
