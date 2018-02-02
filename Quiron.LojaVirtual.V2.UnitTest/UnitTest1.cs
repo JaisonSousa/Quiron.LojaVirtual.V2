@@ -49,11 +49,9 @@ namespace Quiron.LojaVirtual.V2.UnitTest
                 PaginaAtual = 2,
                 ItensPorPargina = 10,
                 ItensTotal = 28
-
             };
 
             Func<int, string> paginaUrl = i => "Pagina" + i;
-
 
             //Act
             MvcHtmlString resultado = htmlHelper.PageLinks(paginacao, paginaUrl);
@@ -65,11 +63,7 @@ namespace Quiron.LojaVirtual.V2.UnitTest
                  @"<a class=""btn btn-default"" href=""Pagina1"">1</a>"
                  + @"<a class=""btn btn-default btn-primary selected"" href=""Pagina2"">2</a>"
                  + @"<a class=""btn btn-default"" href=""Pagina3"">3</a>", resultado.ToString()
-
-
                 );
-
-
         }
     }
 }
