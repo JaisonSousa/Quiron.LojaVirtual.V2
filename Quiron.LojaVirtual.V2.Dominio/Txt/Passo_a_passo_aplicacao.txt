@@ -62,6 +62,16 @@ Aula 9 -> Teste da Paginação - Curso de ASP.NET MVC - Criando uma Loja Virtual
 o teste utilizando as variáveis do Arrenge, em Assert verifica o resultado do teste, sendo o resultado a geração do html de paginação, 
 que antes de ser exibido em uma View e no navegador é testado e confirmado que está tudo correto com o método e mostra que testar é uma boa prática de desenvolvimento.
 
+Aula 10 - ViewModel: ViewResult (ListaProdutos) - Curso de ASP.NET MVC - Criando uma Loja Virtual.
 
+1. Nesta aula o autor fala sobre View Model.
+- Como o controller vitrine tem necessidade de retornar objetos da classes de paginação e da classe de produtos se faz necessário o uso deste pattern, que tem como finalidade modelar várias entidades em um único objeto
+- Autor altera o método ListaProdutos na Controller, que ao invés de retornar somente o objeto produto retorna os objetos produto e paginação através de ViewModel.
+2 - É alterada a View Vitrine onde é inserido a paginação.
+3 - Comenta sobre sobre ActionResult e seus subtipos, como ViewResult, PartialViewResult e JsonResult.
+
+- ViewResult -> 
+- PartialViewResult ->
+- JsonResult ->
 
  

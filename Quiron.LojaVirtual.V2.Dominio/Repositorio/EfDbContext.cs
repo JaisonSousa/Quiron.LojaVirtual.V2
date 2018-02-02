@@ -25,7 +25,6 @@ namespace Quiron.LojaVirtual.V2.Dominio.Repositorio
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             //Produto no banco é Produtos
             modelBuilder.Entity<Produtos>().ToTable("Produtos");
-
         }
 
     }
