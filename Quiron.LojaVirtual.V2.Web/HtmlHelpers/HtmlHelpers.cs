@@ -15,8 +15,7 @@ namespace Quiron.LojaVirtual.V2.Web.HtmlHelpers
         {
             //objeto dinâmico que permite que você expanda o número de caracteres na cadeia de caracteres que ele encapsula
             StringBuilder resultado = new StringBuilder();
-
-            
+        
             for (int i = 1; i <= paginacao.TotalPagina; i++)
             {
                 //Representa uma classe que é usada por auxiliares HTML para criar elementos HTML.
@@ -28,13 +27,10 @@ namespace Quiron.LojaVirtual.V2.Web.HtmlHelpers
                 {
                     tag.AddCssClass("selected");
                     tag.AddCssClass("btn-primary");
-
                 }
 
                 tag.AddCssClass("btn btn-default");
                 resultado.Append(tag);
-
-
             }
 
             return MvcHtmlString.Create(resultado.ToString());

@@ -16,6 +16,5 @@ namespace Quiron.LojaVirtual.V2.Web.Models
         {
             get { return (int)Math.Ceiling((decimal)ItensTotal / ItensPorPargina); }
         }
-
     }
 }
